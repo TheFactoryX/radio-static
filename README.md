@@ -1,5 +1,11 @@
 # 📻 radio-static
 
+[![ANTI-LICENSE](https://img.shields.io/badge/ANTI--LICENSE-STEAL_THIS-000000?style=for-the-badge&labelColor=dc143c)](LICENSE)
+[![Machine Status](https://img.shields.io/github/actions/workflow/status/TheFactoryX/radio-static/generate.yml?style=flat-square&label=signal)](https://github.com/TheFactoryX/radio-static/actions)
+[![GitHub Stars](https://img.shields.io/github/stars/TheFactoryX/radio-static?style=flat-square&logo=github)](https://github.com/TheFactoryX/radio-static/stargazers)
+[![Last Commit](https://img.shields.io/github/last-commit/TheFactoryX/radio-static?style=flat-square)](https://github.com/TheFactoryX/radio-static/commits)
+[![TheFactoryX](https://img.shields.io/badge/TheFactoryX-black?style=flat-square&logo=github)](https://github.com/TheFactoryX)
+
 ```
     ╔═══════════════════════════════════════════════════════════════╗
     ║                                                               ║
@@ -233,6 +239,12 @@ This is a [TheFactoryX](https://github.com/TheFactoryX) production.
 ```
 
 *Mass production. Automated poetry. Machines making machines making meaning.*
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=TheFactoryX/radio-static&type=Date)](https://star-history.com/#TheFactoryX/radio-static&Date)
+
+---
 
 ## Anti-License
 
