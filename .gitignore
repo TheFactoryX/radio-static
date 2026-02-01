@@ -1,0 +1,70 @@
+# Python artifacts
+# (They accumulate like static)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+# (Isolation is an illusion)
+venv/
+ENV/
+env/
+.venv/
+
+# IDE artifacts
+# (The machines that help us make machines)
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS artifacts
+# (The operating system sees everything)
+.DS_Store
+Thumbs.db
+
+# Local config
+# (Secrets belong in the environment, not the repo)
+.env
+.env.local
+
+# The transmissions stay
+# (The archive must grow)
+# We don't ignore transmissions/
+# We never ignore transmissions/
+# The transmissions are the point/
+
+# But we do ignore your local tests
+# (Your experiments are yours alone)
+test_transmissions/
+*.test.md
+*.local.md
+
+# Logs
+# (The void already keeps logs)
+*.log
+
+# Temporary files
+# (Nothing is temporary in the static)
+# (Everything is temporary in the static)
+# (Both are true)
+tmp/
+temp/

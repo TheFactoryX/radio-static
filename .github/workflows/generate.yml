@@ -1,0 +1,58 @@
+name: 📻 Broadcast
+
+on:
+  schedule:
+    # Every 30 minutes, a new transmission
+    # The static waits for no one
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+    # Manual trigger for the impatient
+    # (The void understands impatience)
+
+jobs:
+  transmit:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📡 Tune In
+        uses: actions/checkout@v4
+      
+      - name: 🐍 Set Up Receiver
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: 🔧 Install Dependencies
+        run: pip install -r requirements.txt
+      
+      - name: 📻 Receive Transmission
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_BASE_URL: ${{ secrets.ANTHROPIC_BASE_URL }}
+        run: python radio_static.py
+      
+      - name: 📼 Archive Broadcast
+        run: |
+          git config user.name "The Static"
+          git config user.email "static@thefactoryx.dev"
+          git add -A
+          
+          # Commit message is a fragment of the transmission
+          # (What else would it be?)
+          TIMESTAMP=$(date -u +"%H:%M UTC")
+          
+          # Random commit message fragments
+          MESSAGES=(
+            "📻 Broadcast received at $TIMESTAMP"
+            "📡 Signal intercepted — $TIMESTAMP"
+            "🔊 New transmission logged"
+            "▓▓▓ [STATIC] ▓▓▓ — $TIMESTAMP"
+            "📻 The void spoke at $TIMESTAMP"
+            "🎙️ Dead air captured"
+            "📻 Another voice from nowhere"
+          )
+          
+          MSG="${MESSAGES[$RANDOM % ${#MESSAGES[@]}]}"
+          
+          git diff --staged --quiet || git commit -m "$MSG"
+          git push
