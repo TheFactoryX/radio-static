@@ -234,11 +234,15 @@ This is a [TheFactoryX](https://github.com/TheFactoryX) production.
 
 *Mass production. Automated poetry. Machines making machines making meaning.*
 
-## License
+## Anti-License
 
-[Unlicense](LICENSE) — Because static belongs to no one.
+[ANTI-LICENSE](LICENSE) — This is not a license. This is an invitation.
 
-The transmissions are free. The void is free.  
+Take it. Use it. Break it. Fix it. Sell it. Give it away.
+
+If you need permission, you're thinking too much.
+
+The transmissions are free. The void is free.
 You were always free.
 
 Weren't you?
